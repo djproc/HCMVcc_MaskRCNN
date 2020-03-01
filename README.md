@@ -7,7 +7,7 @@ Files for HCMV identification can be found in the folder "samples/HCMV"
 
 The shapes and ballons are also great for beginners. 
 
-![Instance Segmentation Sample](assets/121_20200201_repE_img277_967_736.tif)
+![Instance Segmentation Sample](assets/121_20200201_repE_img277_967_736.png)
 
 # Mask R-CNN for Object Detection and Segmentation
 
