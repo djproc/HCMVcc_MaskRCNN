@@ -9,9 +9,31 @@ It will definitely be easier to run this using docker
 https://hub.docker.com/repository/docker/djproc/hcmvcc_maskrcnn
 (Note: you will need to run this in linux as docker only has gpu support in linux)
 
-The shapes and ballons files are a great place for beginners to learn how Mask-RCNN works. 
+The shapes and ballons examples are a great place for beginners to learn how Mask-RCNN works. 
 
 ![](assets/121_20200201_repE_img277_967_736.png)
+
+# Installation:
+
+You're going to need a computer with a decent GPU running ubuntu (latest LTS edition, I use 18.04.4 LTS). I use a dual boot setup. 
+
+Download ubunutu: https://releases.ubuntu.com/18.04/
+
+Update the nvidia drivers (from https/www.maketecheasier.com/install-nvidia-drivers-ubuntu/): 
+$ sudo add-apt-repository ppa:graphics-drivers/ppa
+$ sudo apt update
+$ sudo apt upgrade
+$ ubuntu-drivers list
+Install the latest version that is listed
+$ sudo apt install nvidia-driver-VERSION_NUMBER_HERE
+If you have any installation issues, the ubuntu forums are incredibly helpful! 
+
+Install anaconda (optional but useful): https://docs.anaconda.com/anaconda/install/linux/
+
+Install docker: https://docs.docker.com/engine/install/ubuntu/
+
+Download HCMVcc_MaskRCNN from dockerhub: https://hub.docker.com/repository/docker/djproc/hcmvcc_maskrcnn
+
 
 # Mask R-CNN for Object Detection and Segmentation
 
