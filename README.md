@@ -15,7 +15,7 @@ The shapes and ballons examples are a great place for beginners to learn how Mas
 
 # Installation:
 
-You're going to need a computer with a decent GPU running ubuntu (latest LTS edition, I use 18.04.4 LTS). I use a dual boot setup. 
+You're going to need a computer with a decent GPU running ubuntu (latest LTS edition, I use 18.04.4 LTS). I use a dual boot setup for smaller models, but for larger ones I do the training in the cloud and use my ubuntu pc for prediction. 
 
 Download ubunutu: https://releases.ubuntu.com/18.04/
 
