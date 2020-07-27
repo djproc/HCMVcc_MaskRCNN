@@ -39,7 +39,10 @@ Install anaconda (optional but useful): https://docs.anaconda.com/anaconda/insta
 Install docker: https://docs.docker.com/engine/install/ubuntu/
 
 Download HCMVcc_MaskRCNN from dockerhub: https://hub.docker.com/repository/docker/djproc/hcmvcc_maskrcnn
-
+```sh
+$ sudo docker login
+$ sudo docker pull djproc/hcmvcc_maskrcnn:v0.0.1e
+```
 
 # Mask R-CNN for Object Detection and Segmentation
 
