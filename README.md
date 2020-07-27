@@ -19,13 +19,19 @@ You're going to need a computer with a decent GPU running ubuntu (latest LTS edi
 
 Download ubunutu: https://releases.ubuntu.com/18.04/
 
-Update the nvidia drivers (from https/www.maketecheasier.com/install-nvidia-drivers-ubuntu/): 
+Update the nvidia drivers (from https://www.maketecheasier.com/install-nvidia-drivers-ubuntu/): 
+
+```sh
 $ sudo add-apt-repository ppa:graphics-drivers/ppa
 $ sudo apt update
 $ sudo apt upgrade
 $ ubuntu-drivers list
+```
+
 Install the latest version that is listed
+```sh
 $ sudo apt install nvidia-driver-VERSION_NUMBER_HERE
+```
 If you have any installation issues, the ubuntu forums are incredibly helpful! 
 
 Install anaconda (optional but useful): https://docs.anaconda.com/anaconda/install/linux/
