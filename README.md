@@ -90,6 +90,22 @@ http://localhost:8888/notebooks/Mask_RCNN/samples/shapes/train_shapes.ipynb
 
 Run each of the cells by pressing [ SHIFT + ENTER ]
 
+At cell 9, you should see a progress bar that looks like this:
+![](assets/Screenshot%20from%202020-07-28%2016-35-52.png)
+
+Sometimes this won't work the first time... interupt the kernel and run this cell again. There might be some scary red warnings about memory usage. 
+
+You should get some results at the end of the notebook that look like this:
+
+# How to adapt this code for your own model:
+
+#TODO: Explain how MaskRCNN works, what data and masks you need before you train.
+Start testing with small images (256x256 pixels) and simple! 
+Use an online labelling tool (e.g. labelbox) to label your data at full resoultion, then scale the images and masks down.
+#TODO: add code for scaling
+
+
+
 # Mask R-CNN for Object Detection and Segmentation
 
 This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
