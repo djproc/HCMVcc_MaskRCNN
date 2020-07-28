@@ -38,11 +38,57 @@ Install anaconda (optional but useful): https://docs.anaconda.com/anaconda/insta
 
 Install docker: https://docs.docker.com/engine/install/ubuntu/
 
-Download HCMVcc_MaskRCNN from dockerhub: https://hub.docker.com/repository/docker/djproc/hcmvcc_maskrcnn
+Install the nvidia container toolkit (this allows you to access the GPUs from within the docker container)
 ```sh
+# Add the package repositories
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+$ curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+$ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+
+$ sudo apt-get update
+$ sudo apt-get install -y nvidia-container-toolkit
+$ sudo systemctl restart docker
+```
+Test that there are no errors with your installation by running the following:
+```sh
+# Login to Docker
 $ sudo docker login
+# Test nvidia-smi with the latest official CUDA image
+$ docker run --gpus all nvidia/cuda:10.0-base nvidia-smi
+```
+If this returns no errors, but just stats about your GPU... then you're good to go!
+
+Download (pull) the HCMVcc_MaskRCNN image from Docker Hub: https://hub.docker.com/repository/docker/djproc/hcmvcc_maskrcnn
+```sh
 $ sudo docker pull djproc/hcmvcc_maskrcnn:v0.0.1e
 ```
+
+# Getting Started:
+Once you've pulled the image, you can run the image as a container:
+```sh
+$ sudo docker run --gpus all -p 8888:8888 -it djproc/hcmvcc_maskrcnn:v0.0.1e bash -c 'source /etc/bash.bashrc && jupyter notebook --notebook-dir=/tf --ip 0.0.0.0 --no-browser --allow-root' 
+```
+A tensorflow instance should start and run a jupyter notebook. It is being sent to the port at 8888. 
+
+Copy the text after "token=" 
+
+Then go to your browser at http://localhost:8888/
+
+Enter the token into the box. 
+
+You should now have access to a jupyter notebook from witin your docker container. 
+
+Note: if you want to stop adding sudo to everything, run from the root user:
+```sh
+$ sudo -s
+```
+
+# Testing that Mask-RCNN is working:
+
+Open the shapes demo and see if it works!
+http://localhost:8888/notebooks/Mask_RCNN/samples/shapes/train_shapes.ipynb
+
+Run each of the cells by pressing [ SHIFT + ENTER ]
 
 # Mask R-CNN for Object Detection and Segmentation
 
