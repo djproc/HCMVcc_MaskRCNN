@@ -99,14 +99,19 @@ The first column are the images themselves, the following rows are the "masks" f
 
 PLEASE NOTE: The biggest challeng with Mask-RCNN is creating your training dataset!
 
-
-
 At cell 9, you should see a progress bar that looks like this:
 ![](assets/Screenshot%20from%202020-07-28%2016-35-52.png)
 
 Sometimes this won't work the first time... interupt the kernel and run this cell again. There might be some scary red warnings about memory usage. 
 
 You should get some results at the end of the notebook that look like this:
+
+![](assets/result1.jpg)
+![](assets/result2.jpg)
+![](assets/result3.jpg)
+![](assets/result4.jpg)
+![](assets/result5.jpg)
+![](assets/result6.jpg)
 
 # How to adapt this code for your own model:
 
