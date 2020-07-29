@@ -95,6 +95,8 @@ You can run each of the cells by pressing [ SHIFT + ENTER ]
 In cell 6, you can see a subset of the training data.
 The first column are the images themselves, the following rows are the "masks" for the individual shapes present in each image.If multiple of the same shape are present, you can see that they are presented as a different shade. This means we will be performing INSTANCE SEGMENTATION, not just finding the whole area that is  covered by squares (SEMANTIC SEGMENTATION) but finding each of the individual squares themselves. 
 
+![](assets/shapes_trainingset.jpg)
+
 PLEASE NOTE: The biggest challeng with Mask-RCNN is creating your training dataset!
 
 
