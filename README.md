@@ -88,7 +88,16 @@ $ sudo -s
 Open the shapes demo and see if it works!
 http://localhost:8888/notebooks/Mask_RCNN/samples/shapes/train_shapes.ipynb
 
-Run each of the cells by pressing [ SHIFT + ENTER ]
+In this example, you can use Mask-RCNN to find (identify and segment) the different shapes within an image containing a number of them! Easy, right?
+
+You can run each of the cells by pressing [ SHIFT + ENTER ]
+
+In cell 6, you can see a subset of the training data.
+The first column are the images themselves, the following rows are the "masks" for the individual shapes present in each image.If multiple of the same shape are present, you can see that they are presented as a different shade. This means we will be performing INSTANCE SEGMENTATION, not just finding the whole area that is  covered by squares (SEMANTIC SEGMENTATION) but finding each of the individual squares themselves. 
+
+PLEASE NOTE: The biggest challeng with Mask-RCNN is creating your training dataset!
+
+
 
 At cell 9, you should see a progress bar that looks like this:
 ![](assets/Screenshot%20from%202020-07-28%2016-35-52.png)
