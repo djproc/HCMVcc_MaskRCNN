@@ -113,6 +113,8 @@ You should get some results at the end of the notebook that look like this:
 ![](assets/result5.jpg)
 ![](assets/result6.jpg)
 
+Some aren't perfect, but the accuracy is pretty good considering how little we have trained. Train the model for longer and see if the accuracy improves!
+
 # How to adapt this code for your own model:
 
 #TODO: Explain how MaskRCNN works, what data and masks you need before you train.
