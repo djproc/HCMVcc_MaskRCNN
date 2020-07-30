@@ -113,7 +113,12 @@ You should get some results at the end of the notebook that look like this:
 ![](assets/result5.jpg)
 ![](assets/result6.jpg)
 
-Some aren't perfect, but the accuracy is pretty good considering how little we have trained. Train the model for longer and see if the accuracy improves!
+Some aren't perfect, but the accuracy is pretty good considering how little we have trained. If we trained the model for longer we would see the accuracy improve! e.g. Below we have trained for a few more EPOCHS...
+
+![](assets/result7.jpg)
+![](assets/result8.jpg)
+![](assets/result9.jpg)
+![](assets/result10.jpg)
 
 # How to adapt this code for your own model:
 
